@@ -1,15 +1,15 @@
 const array = [10, 6, 5, 22, 99, 103, 246];
 
 function insertionSort() {
-    let j, temp;
+    let j, key;
     for (let i = 1; i < array.length; i++) {
-        temp = array[i];
+        key = array[i];
         j = i - 1;
-        while (array[j] > temp && j >= 0) {
+        while (array[j] > key && j >= 0) {
             array[j + 1] = array[j];
             j--;
         }
-        array[j + 1] = temp;
+        array[j + 1] = key;
     }
 }
 
