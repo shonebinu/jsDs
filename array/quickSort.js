@@ -7,8 +7,7 @@ function swap(arr, a, b) {
 function quickSort(beg, end) {
     let low, high, pivot;
     if (beg < end) {
-        pivot = beg;
-        low = beg;
+        pivot = low = beg;
         high = end;
         while (low < high) {
             while (array[low] <= array[pivot])
