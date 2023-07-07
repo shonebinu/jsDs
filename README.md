@@ -12,3 +12,4 @@ A JavaScript port from my college's C++ Data Structures programs.
 ### Sorting
 7. [Selection Sort](./array/selectionSort.js)
 8. [Insertion Sort](./array/insertionSort.js)
+9. [Quick Sort](./array/quickSort.js)
