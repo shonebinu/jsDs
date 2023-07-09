@@ -5,21 +5,21 @@ function swap(arr, a, b) {
 }
 
 function quickSort(beg, end) {
-    let low, high, pivot;
+    let left, right, pivot;
     if (beg < end) {
-        pivot = low = beg;
-        high = end;
-        while (low < high) {
-            while (array[low] <= array[pivot])
-                low++;
-            while (array[high] > array[pivot])
-                high--;
-            if (low < high) 
-                swap(array, low, high); //swap a[low] & a[high]
+        pivot = left = beg;
+        right = end;
+        while (left < right) {
+            while (array[left] <= array[pivot])
+                left++;
+            while (array[right] > array[pivot])
+                right--;
+            if (left < right) 
+                swap(array, left, right); //swap a[left] & a[right]
         }
-        swap(array, pivot, high);
-        quickSort(beg, high-1);
-        quickSort(high+1, end);
+        swap(array, pivot, right);
+        quickSort(beg, right-1);
+        quickSort(right+1, end);
     }
 }
 
