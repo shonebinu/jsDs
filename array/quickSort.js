@@ -1,4 +1,4 @@
-const array = [10, 6, 5, 22, 99, 103, 246];
+const array = [65, 70, 75, 80, 85, 60, 55, 50, 45, 12];
 
 function swap(arr, a, b) {
     [arr[a], arr[b]] = [arr[b], arr[a]];
