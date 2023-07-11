@@ -10,7 +10,7 @@ function quickSort(beg, end) {
         pivot = left = beg;
         right = end;
         while (left < right) {
-            while (array[left] <= array[pivot] && left < right)
+            while (array[left] <= array[pivot] && left < end)
                 left++;
             while (array[right] > array[pivot])
                 right--;
